@@ -1,5 +1,5 @@
 - name: Print variables
-  hosts: web
+  hosts: node1
   vars:
     var_playbook: "var playbook"
     var_whoistheboss: "playbook is the boss"

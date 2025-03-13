@@ -1,0 +1,25 @@
+- name: Print variables
+  hosts: node1
+  vars:
+    var_playbook: "var playbook"
+    var_whoistheboss: "playbook is the boss"
+  tasks:
+    - name: Print var_all
+      ansible.builtin.debug:
+        msg: "{{ var_all }}"
+
+    - name: Print var_host
+      ansible.builtin.debug:
+        msg: "{{ var_host }}"
+
+    - name: Print var_playbook
+      ansible.builtin.debug:
+        msg: "{{ var_playbook }}"
+
+    - name: Print var_survey
+      ansible.builtin.debug:
+        msg: "{{ var_survey }}"
+
+    - name: Print var_whoistheboss
+      ansible.builtin.debug:
+        msg: "{{ var_whoistheboss }}"

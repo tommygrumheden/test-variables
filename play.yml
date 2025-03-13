@@ -4,9 +4,9 @@
     var_playbook: "var playbook"
     var_whoistheboss: "playbook is the boss"
   tasks:
-    - name: Print var_all
+    - name: Print var_inventory
       ansible.builtin.debug:
-        msg: "{{ var_all }}"
+        msg: "{{ var_inventory }}"
 
     - name: Print var_host
       ansible.builtin.debug:
